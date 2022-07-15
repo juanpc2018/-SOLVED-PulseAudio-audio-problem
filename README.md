@@ -1,12 +1,14 @@
 # -SOLVED-PulseAudio-audio-problem
 
 There is a problem in Linux with USB sound interfaces like Focusrite 18i20 mk2,
-Tose require a propietary software in Windows or OSX to change DSP HW configuration.
+require a propietary software in Windows or OSX to change DSP HW configuration.
+The software works in Wine, but the USB interface is Not detected.
+porobably Wine does Not have proper USB Passthrough like other Virtual Machine Softwares, VMware, Parallels, VirtualBox, Qemu, Kvm, etc... 
 
-The USB device has playback, Recording, Control software, Raw MIDI.
+The USB device has playback, Recording, Control software, Raw MIDI. *see list at the bottom.
 
-the second problem:
-the audio problem was that PulseAudio sets Linux Default Sample Rate to 44.1Khz,
+the 2nd problem:
+the audio problem was PulseAudio sets Linux Default Sample Rate to 44.1Khz at Boot,
 if the Focusrite was in s/pdif clock to 48Khz, 
 will Not work.
 
@@ -26,16 +28,21 @@ the proper way is to use the proper Sample Rate required for the file or Higher.
 if the file is 44.1Khz but the Sound interface is 48Khz, 88.2Khz 96Khz, works Ok.
 Pulse Audio Sample Rate work ok going Up, from a lower sample rate to higher output.
 
-The sollution is to simply comment out "delete" the ; and change 44100 to 48000 Default Sample Rate.
-will work ok.
+Workarround was using JackAudio,
+
+The sollution is simply comment out "delete" the ; and change 44100 to 48000 Default Sample Rate.
+reset Pulseaudio, and works Ok.
+
 Internal or External Audio Clock.
 
 /etc/pulse/daemon.conf
 line 82: default-sample-rate = 48000
 
 save.
+
 $ pulseaudio -kill
-Done.
+
+[SOLVED].
 
 ive tested so many things, Nothing worked, exept QjackCtl, 
 i thought it was a bug, the answere was so easy.
