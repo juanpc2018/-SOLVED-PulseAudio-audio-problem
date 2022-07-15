@@ -1,4 +1,4 @@
-# -SOLVED-PulseAudio-audio-problem
+# -SOLVED-PulseAudio-problem
 
 There is a problem in Linux with USB sound interfaces like Focusrite 18i20 mk2,
 require a propietary software in Windows or OSX to change DSP HW configuration.
