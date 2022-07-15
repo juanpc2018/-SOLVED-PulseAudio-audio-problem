@@ -89,6 +89,36 @@ pcm.usb-audio {
 Just for fun:
 
 $ alsamixer
+F6
+F2
+
+/proc/asound/version
+/proc/asound/cards
+/proc/asound/devices
+/proc/asound/oss/devices
+/proc/asound//timers
+/proc/asound/pcm
+
+$ cat /proc/asound/devices
+  1:        : sequencer
+  2: [ 0- 3]: digital audio playback
+  3: [ 0- 7]: digital audio playback
+  4: [ 0- 8]: digital audio playback
+  5: [ 0- 9]: digital audio playback
+  6: [ 0-10]: digital audio playback
+  7: [ 0- 0]: hardware dependent
+  8: [ 0]   : control
+  9: [ 2- 0]: digital audio playback
+ 10: [ 2- 0]: digital audio capture
+ 11: [ 2- 1]: digital audio playback
+ 12: [ 2- 0]: hardware dependent
+ 13: [ 2]   : control
+ 14: [ 1- 0]: digital audio playback
+ 15: [ 1- 0]: digital audio capture
+ 16: [ 1]   : control
+ 17: [ 1- 0]: raw midi
+ 33:        : timer
+
 
 $ aplay -L | grep CARD
 hw:CARD=HDMI,DEV=3
