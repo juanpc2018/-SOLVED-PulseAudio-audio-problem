@@ -8,7 +8,7 @@ probably because Wine does Not have proper USB Passthrough like other VirtualMac
 
 The USB device has playback, Recording, Control software, Raw MIDI. *see list at the bottom.
 
-the 2nd problem:
+2nd problem:
 the audio problem was PulseAudio sets Linux Default Sample Rate to 44.1Khz at Boot,
 if the Focusrite was in s/pdif clock to 48Khz, 
 will Not work.
