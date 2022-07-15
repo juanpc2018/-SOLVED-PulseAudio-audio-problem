@@ -1,6 +1,6 @@
 # -SOLVED-PulseAudio-problem
 
-There is a problem in Linux with USB sound interfaces like Focusrite 18i20 mk2, those 
+There are several problems in Linux with USB sound interfaces like Focusrite 18i20 mk2, those 
 require a propietary control software for Windows or OSX to change DSP HW configuration.
 
 The software works in Wine, but the USB interface is Not detected.
