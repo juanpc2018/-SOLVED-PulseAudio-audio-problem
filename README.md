@@ -71,7 +71,7 @@ defaults.ctl.card 2
 
 ----
 
-/home/mama/.asoundrc
+/home/user/.asoundrc
 pcm.usb-audio {
           type hw
           card 2
