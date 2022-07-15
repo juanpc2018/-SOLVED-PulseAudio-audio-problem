@@ -1,9 +1,10 @@
 # -SOLVED-PulseAudio-problem
 
-There is a problem in Linux with USB sound interfaces like Focusrite 18i20 mk2,
-require a propietary software in Windows or OSX to change DSP HW configuration.
+There is a problem in Linux with USB sound interfaces like Focusrite 18i20 mk2, those 
+require a propietary control software for Windows or OSX to change DSP HW configuration.
+
 The software works in Wine, but the USB interface is Not detected.
-porobably Wine does Not have proper USB Passthrough like other Virtual Machine Softwares, VMware, Parallels, VirtualBox, Qemu, Kvm, etc... 
+probably because Wine does Not have proper USB Passthrough like other VirtualMachine Softwares, VMware, Parallels, VirtualBox, Qemu, Kvm, etc... 
 
 The USB device has playback, Recording, Control software, Raw MIDI. *see list at the bottom.
 
