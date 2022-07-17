@@ -9,13 +9,13 @@ probably because Wine does Not have proper USB Passthrough like other VirtualMac
 The USB device has playback, Recording, Control software, Raw MIDI. *see list at the bottom.
 
 2nd problem:
-the audio problem was PulseAudio sets Linux Default Sample Rate to 44.1Khz at Boot,
-if the Focusrite was in s/pdif clock to 48Khz, 
+PulseAudio sets Linux Default Sample Rate to 44.1Khz at Boot, fixed, forced, Not Auto, does Not allow to change.
+if the USB Focusrite interface was set to External s/pdif clock & 48Khz, 
 will Not work.
 
 3rd problem:
 $ alsamixer does Not allow to change SampleRate,
-Only clock Source.
+Only clock Source for that particular USB sound interface, and many others i guess.
 
 4th problem: 
 when interfase was set to Internal Clock,
