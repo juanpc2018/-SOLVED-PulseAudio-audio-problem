@@ -40,9 +40,10 @@ maybe auto or 0 could work, havent tested, yet.
 and reset Pulseaudio, 
 Problem Solved, works Ok.
 
-Internal or External Audio Clock.
+Internal or External Audio Clock, Works Ok.
 
 /etc/pulse/daemon.conf
+
 line 82: default-sample-rate = 48000
 
 save.
