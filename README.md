@@ -36,7 +36,7 @@ but Not Downwards.
 Workarround was using JackAudio,
 
 The permanent sollution is simply comment out "delete" the ; and change 44100 to 48000 Default Sample Rate.
-maybe auto could work, havent tested, yet.
+maybe auto or 0 could work, havent tested, yet.
 and reset Pulseaudio, 
 Problem Solved, works Ok.
 
