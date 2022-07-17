@@ -27,9 +27,10 @@ activates a Software Sample Rate Converter,
 but does Not work well going Down from a Higher SR file / source 48Khz, 88.2Khz, 96Khz to 44.1Khz Hw output.
 
 the proper way in theory is to change the USB interface Sample Rate internal clock to use the proper Sample Rate required for the audio file, or a Higher Sample Rate. *Oversampling.
+
 if the file is 44.1Khz but the Sound interface is 48Khz, 88.2Khz 96Khz, works Ok.
 Pulse Audio Sample Rate works ok going Up, 
-from a lower sample rate to higher output.
+from a lower sample rate file to higher SR output.
 but Not Downwards.
 
 Workarround was using JackAudio,
