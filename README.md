@@ -52,8 +52,8 @@ $ pulseaudio -kill
 
 [SOLVED].
 
-ive tested so many things, Nothing worked, exept QjackCtl, 
-i thought it was a bug, the answer was so easy.
+tested so many things, Nothing worked, exept QjackCtl, 
+i thought it was a bug, the answer was so simple.
 
 -----
 
