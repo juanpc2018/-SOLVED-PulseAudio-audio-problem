@@ -9,24 +9,24 @@ probably because Wine does Not have proper USB Passthrough like other VirtualMac
 The USB device has playback, Recording, Control software, MIDI. *see list at the bottom.
 
 2nd problem:
-PulseAudio sets Linux Default Sample Rate to 44.1Khz at Boot, fixed, forced, Not Auto or 0, and does Not allow to change.
+PulseAudio sets Linux Default Sample Rate to 44.1Khz at Boot, fixed, forced, Not Auto nor 0, and does Not allow to change.
 if the USB Focusrite interface was set to External s/pdif clock & 48Khz, 
 will Not work.
 
 3rd problem:
 $ alsamixer does Not allow to change SampleRate,
-Only clock Source for that particular USB sound interface, and many others i guess.
+Only clock Source for that particular USB sound interface, and others i guess.
 
 4th problem: 
 when USB interface was set to Internal Clock,
 works but only at 44.1Khz,
 when you try to play a 48Khz file/stream/source,
-PulseAudio Sample Rate converter goes Crazy.
-because does Not does Not allow to change sample rate to 48Khz,
-activates Software Sample Rate Converter,
+PulseAudio Sample Rate Converter goes Crazy.
+because PA does Not allow to Change Sample Rate to 48Khz,
+activates a Software Sample Rate Converter,
 but does Not work well going Down from a Higher SR file / source 48Khz, 88.2Khz, 96Khz to 44.1Khz Hw output.
 
-the proper way in theory is to change the USB interface Sample Rate internal clock to use the proper Sample Rate required for the file, or a Higher Sample Rate.
+the proper way in theory is to change the USB interface Sample Rate internal clock to use the proper Sample Rate required for the audio file, or a Higher Sample Rate. *Oversampling.
 if the file is 44.1Khz but the Sound interface is 48Khz, 88.2Khz 96Khz, works Ok.
 Pulse Audio Sample Rate works ok going Up, 
 from a lower sample rate to higher output.
