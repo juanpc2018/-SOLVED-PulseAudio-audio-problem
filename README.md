@@ -18,21 +18,26 @@ $ alsamixer does Not allow to change SampleRate,
 Only clock Source for that particular USB sound interface, and many others i guess.
 
 4th problem: 
-when interfase was set to Internal Clock,
+when USB interface was set to Internal Clock,
 works but only at 44.1Khz,
 when you try to play a 48Khz file/stream/source,
-
 PulseAudio Sample Rate converter goes Crazy.
-because does Not work well going Down from higher file / source like 48Khz or 88.2Khz or 96Khz to 44.1Khz Hw output.
+because does Not does Not allow to change sample rate to 48Khz,
+activates Software Sample Rate Converter,
+but does Not work well going Down from a Higher SR file / source 48Khz, 88.2Khz, 96Khz to 44.1Khz Hw output.
 
-the proper way is to use the proper Sample Rate required for the file or Higher.
+the proper way in theory is to change the USB interface Sample Rate internal clock to use the proper Sample Rate required for the file, or a Higher Sample Rate.
 if the file is 44.1Khz but the Sound interface is 48Khz, 88.2Khz 96Khz, works Ok.
-Pulse Audio Sample Rate work ok going Up, from a lower sample rate to higher output.
+Pulse Audio Sample Rate works ok going Up, 
+from a lower sample rate to higher output.
+but Not Downwards.
 
 Workarround was using JackAudio,
 
-The sollution is simply comment out "delete" the ; and change 44100 to 48000 Default Sample Rate.
-reset Pulseaudio, and works Ok.
+The permanent sollution is simply comment out "delete" the ; and change 44100 to 48000 Default Sample Rate.
+maybe auto could work, havent tested, yet.
+and reset Pulseaudio, 
+Problem Solved, works Ok.
 
 Internal or External Audio Clock.
 
