@@ -229,3 +229,5 @@ $ cat /proc/asound/cards
                       HDA Intel PCH at 0xa0914000 irq 74
  2 [USB            ]: USB-Audio - Scarlett 18i20 USB
                       Focusrite Scarlett 18i20 USB at usb-0000:00:14.0-1.4, high speed
+more here:
+https://forum.videolan.org/viewtopic.php?f=13&t=160171&p=529506#p529506
