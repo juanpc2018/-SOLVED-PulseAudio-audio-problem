@@ -42,7 +42,7 @@ Problem Solved, works Ok.
 
 Internal or External Audio Clock, Works Ok.
 
-/etc/pulse/daemon.conf
+> cat /etc/pulse/daemon.conf
 
 line 82: default-sample-rate = 48000
 
