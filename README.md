@@ -48,7 +48,7 @@ line 82: default-sample-rate = 48000
 
 save.
 
-$ pulseaudio --kill
+$ pulseaudio - -kill
 
 [SOLVED].
 
