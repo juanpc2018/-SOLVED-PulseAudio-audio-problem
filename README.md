@@ -8,7 +8,7 @@ probably because Wine does Not have proper USB Passthrough like VirtualMachine S
 
 The USB device has playback, Recording, Control software, MIDI. *see list at the bottom. </br>
 
-that has been solved by recreating the control software for Linux </br>
+has been solved by creating a control software for Linux & Kernel drivers </br>
 https://github.com/geoffreybennett/alsa-scarlett-gui/blob/master/docs/INSTALL.md </br>
 
 2nd problem: </br>
