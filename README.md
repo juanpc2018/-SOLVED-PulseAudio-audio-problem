@@ -12,7 +12,7 @@ has been solved by creating a control software for Linux & Kernel drivers </br>
 https://github.com/geoffreybennett/alsa-scarlett-gui/blob/master/docs/INSTALL.md </br>
 
 2nd problem: </br>
-PulseAudio sets Linux Default Sample Rate to 44.1Khz at Boot, fixed, forced, Not Auto / 0, does Not allow to change. </br>
+PulseAudio sets Linux Default Sample Rate to 44.1Khz at Boot, fixed, forced, Not Auto & does Not allow to change. </br>
 if the USB Focusrite interface was set to External s/pdif clock & 48Khz,  </br>
 will Not work. </br>
 
