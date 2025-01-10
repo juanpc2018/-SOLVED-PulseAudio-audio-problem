@@ -21,7 +21,7 @@ does Not allow to change SampleRate, </br>
 Only clock Source for that particular USB sound interface, and others. </br>
 
 3rd problem:  </br>
-when USB interface was set to Internal Clock, </br>
+when USB interface is set to Internal Clock, </br>
 works but only at 44.1Khz, </br>
 when you try to play a 48Khz file/stream/source, </br>
 PulseAudio Sample Rate Converter goes Crazy. </br>
