@@ -16,12 +16,11 @@ PulseAudio sets Linux Default Sample Rate to 44.1Khz at Boot, fixed, forced, Not
 if the USB Focusrite interface was set to External s/pdif clock & 48Khz,  </br>
 will Not work. </br>
 
-3rd problem: </br>
 $ alsamixer </br>
 does Not allow to change SampleRate, </br>
 Only clock Source for that particular USB sound interface, and others. </br>
 
-4th problem:  </br>
+3rd problem:  </br>
 when USB interface was set to Internal Clock, </br>
 works but only at 44.1Khz, </br>
 when you try to play a 48Khz file/stream/source, </br>
