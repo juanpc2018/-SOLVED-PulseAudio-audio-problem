@@ -48,7 +48,8 @@ Internal or External Audio Clock, Works Ok. </br>
 
 > cat /etc/pulse/daemon.conf </br>
 
-line 82: default-sample-rate = 48000 </br>
+line 82 remove ; change sample rate</br>
+default-sample-rate = 48000 </br>
 
 save. </br>
 
@@ -59,7 +60,7 @@ $ pulseaudio - -kill </br>
 $ pulseaudio --help </br>
 $ pulseaudio --dump-resample-methods </br>
 
-if want better quality:  </br>
+if want better quality, also add:  </br>
 resample-method = ffmpeg </br>
 or speex-float-10  </br>
 or speex-fixed-10 </br>
