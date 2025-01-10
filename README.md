@@ -4,7 +4,7 @@ There are several problems in Linux with USB sound interfaces like Focusrite 18i
 require a propietary control software for Windows or OSX to change HW configuration. </br>
 
 The software works in Wine, but the USB interface is Not detected. </br>
-probably because Wine does Not have proper USB Passthrough like VirtualMachine Softwares, VMware, Parallels, VirtualBox, Qemu, Kvm, etc...  </br>
+because Wine does Not have USB Passthrough like VirtualMachine Softwares, VMware, Parallels, VirtualBox, Qemu, Kvm, etc...  </br>
 
 The USB device has playback, Recording, Control software, MIDI. *see list at the bottom. </br>
 
