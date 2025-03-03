@@ -1,4 +1,4 @@
-# -SOLVED-PulseAudio-problem
+# SOLVED PulseAudio problem
 
 There are several problems in Linux with USB sound interfaces like Focusrite 18i20 mk2, those </br>
 require a propietary control software for Windows or OSX to change HW configuration. </br>
@@ -49,8 +49,15 @@ Internal or External Audio Clock, Works Ok. </br>
 
 line 82 remove ; change sample rate</br>
 default-sample-rate = 48000 </br>
-
+or </br>
+default-sample-rate = 48000 </br>
+alternate-sample-rate = 96000 </br>
+or both at the same sameple-rate, to force Pulse Audio to Always Only 96kHz, </br>
 save. </br>
+
+IF play a 96Khz file and PulseAudio is forced to 44.1 (default) or 48Khz, </br>
+VLC SampleRateConverter does Not work Downwards. </br>
+but works upwards ok. </br>
 
 $ pulseaudio - -kill </br>
 
@@ -70,9 +77,6 @@ or S32LE </br>
 or S24_32LE </br>
 or FLOAT32LE </br>
 
-optional: </br>
-alternate-sample-rate = 96000 </br>
-to force Pulse Audio to Always Only 96kHz. </br>
 
 $ pulseaudio --dump-resample-methods </br>
 trivial </br>
