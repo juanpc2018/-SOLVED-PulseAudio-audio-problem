@@ -4,16 +4,16 @@ There are several problems in Linux with USB sound interfaces like Focusrite 18i
 require a propietary control software for Windows or OSX to change HW configuration. </br>
 
 The software works in Wine, but the USB interface is Not detected. </br>
-because Wine does Not have USB Passthrough like VirtualMachine Softwares, VMware, Parallels, VirtualBox, Qemu, Kvm, etc...  </br>
+because Wine does Not have USB Passthrough like VirtualMachine: VMware, Parallels, VirtualBox, Qemu, Kvm, etc...  </br>
 
-The USB device has playback, Recording, Control software, MIDI. *see list at the bottom. </br>
+USB device has playback, Recording, Control software, MIDI. *see list at the bottom. </br>
 
 has been solved by creating a control software for Linux </br>
 https://github.com/geoffreybennett/alsa-scarlett-gui/blob/master/docs/INSTALL.md </br>
 
 2nd problem: </br>
 PulseAudio sets Linux Default Sample Rate to 44.1Khz at Boot, fixed, forced, Not Auto & does Not allow to change. </br>
-if the USB Focusrite interface was set to External s/pdif clock & 48Khz,  </br>
+if USB Focusrite interface is set to External s/pdif clock & 48Khz  </br>
 will Not work. </br>
 
 $ alsamixer </br>
@@ -26,10 +26,10 @@ works but only at 44.1Khz, </br>
 when you try to play a 48Khz file/stream/source, </br>
 PulseAudio Sample Rate Converter goes Crazy. </br>
 because PulseAudio does Not allow to Change Sample Rate to 48Khz, </br>
-activates a Software Sample Rate Converter, </br>
-but Default SRC, does Not work well going Down from a Higher SR file / source like 48Khz, 88.2Khz, 96Khz to 44.1Khz Hw output. </br>
+activates a Software Sample.Rate.Converter, </br>
+but Default SRC, does Not work well going from a Higher SR file / source like 48Khz, 88.2Khz, 96Khz down to 44.1Khz Hw output. </br>
 
-the proper way in theory is to change the USB interface Sample Rate internal clock to use the same Sample Rate required for the audio file, or a Higher Sample Rate *Oversampling. </br>
+the proper way is to change USB interface Sample Rate / internal clock to use the same Sample Rate required for the audio file, or a Higher Sample Rate *Oversampling. </br>
 
 if the file is 44.1Khz but the Sound interface is 48Khz, 88.2Khz 96Khz, SRC works Ok. </br>
 Pulse Audio Default Sample Rate works ok going Up,  </br>
@@ -56,7 +56,7 @@ or both at the same sameple-rate, to force Pulse Audio to Always Only 96kHz, </b
 save. </br>
 
 IF play a 96Khz file and PulseAudio is forced to 44.1 (default) or 48Khz, </br>
-VLC SampleRateConverter does Not work Downwards. </br>
+VLC SampleRateConverter does Not work, </br>
 but works upwards ok. </br>
 
 $ pulseaudio - -kill </br>
